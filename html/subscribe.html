@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- Randy Freese - HTML/CSS Document Project# Part1*-TEMPLATE - Date: Mar.21.2025/ -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Change name/title: -->
+    <title>Subscribe</title>
+    <!-- link CSS Sheets below: Reset first -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/sharedLayout.css" />
+    <link rel="stylesheet" href="../css/subscibeContact.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../images/Company Logos/logo ffpinc - small.JPG" alt="freezeflame"></a>
+      <img src="../images/Company Logos/3rdworldcouncil(red-transparent)Randy-new.png" alt="TWCNA">
+      <img src="../images/Company Logos/TWC-PI-Blue.jpg" alt="TWCBlue">
+      <a href="../non-profit-project/1-index2024.html"><img src="../images/Company Logos/Third world council - logo (300 x 300 px).png" alt="KisKinohtahiwewin"></a>
+      
+      <h1>Subscriptions </h1>
+      <!-- Navigation -->
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./products.html">Products</a>
+        <a href="./contact.html">Contact Us</a>
+        <a href="./subscribe.html">Subscribe</a>
+      </nav>
+    </header>
+     <!-- main, section, aside, article -->
+    <main>
+        <!-- section -->
+        <h2>Subscriber Information</h2>
+      <section class="sec1">
+        <form action="#" method="post" class="subscribe" id="subscribeForm" name="subscribeForm">
+          <fieldset>
+            <legend>User Login Information</legend>
+
+            <label for="firstname">First Name</label>            
+            <input type="text" name="firstname" id="user1" placeholder="First Name" onblur="validateField('user1');">
+            <!-- <h6 id="errorMsg1"></h6> -->
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="user2" placeholder="Last Name" onblur="validateField('user2');">
+            <!-- <h6 id="errorMsg2"></h6> -->
+
+
+            <label for="user">User name</label>            
+            <input type="text" name="username" id="user" placeholder="Desired Username" onblur="validateField('user');">
+            <!-- <h6 id="errorMsg3"></h6> -->
+
+
+            <label for="pass">Password</label>
+            <input type="password" name="password" id="pass1" placeholder="password" onblur="validatePassword('pass1');"> 
+            <h6 id="errorMsg3"></h6><h6></h6>
+
+            
+            <label for="pass">Confirm Password</label>
+            <input type="password" name="password" id="pass2" placeholder="confirm password" onblur="validatePassword('pass2');"> 
+            <h6 id="errorMsg4"></h6><h6></h6>
+
+          </fieldset>  
+
+          <fieldset>
+
+            <legend>Personal Information</legend>           
+
+            <label for="mail">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email Address" onblur="validateEmail();">
+            <h6 id="errorMsg5"></h6><h6></h6>
+
+
+            <label for="tel">Phone Number</label>
+            <input type="tel" name="telephone" id="tel" placeholder="Phone Number" onblur="validateTelephone();">
+            <h6 id="errorMsg6"></h6><h6></h6>
+
+
+            <label for="DOB">Date of Birth</label>
+            <input type="date" name="birthday" id="DOB" placeholder="Date Of Birth" onblur="validateDOB();">
+            <h6 id="errorMsg7"></h6><h6></h6>
+
+
+            <label for="Age">Current Age</label>
+            <input type="number" name="currentAge" id="Age" placeholder="Current Age" onblur="validateAge();">
+            <h6 id="errorMsg8"></h6><h6></h6>
+
+
+          </fieldset>  
+
+            
+
+          
+          <fieldset>
+            <legend>Shipping/Mailing Address</legend>
+
+            <label for="mailAddress">Building Number</label>
+            <input type="number" name="mailAddress" id="mailAddress" placeholder="building number" onblur="validateAddress();">
+            <h6 id="errorMsg9"></h6><h6></h6>
+
+
+            <label for="streetName">Street Name</label>
+            <input type="text" name="streetName" id="streetName" placeholder="Street Name " onblur="validateField('streetName');">
+            <!-- <h6 id="errorMsg10"></h6> -->
+
+
+            <label for="CITY">City</label>            
+            <select name="city" id="city">
+              <option value="Vancouver" selected>Vancouver</option>
+              <option value="Edmonton">Edmonton</option>
+              <option value="Calgary">Calgary</option>
+              <option value="Regina">Regina</option>
+              <option value="Winnipeg">Winnipeg</option>
+              <option value="Thunder Bay">Thunder Bay</option>
+              <option value="Sudbury">Sudbury</option>
+              <option value="Toronto">Toronto</option>
+              <option value="Montreal">Montreal</option>
+              <option value="Halifax">Halifax</option>
+              <option value="Other" placeholder="Enter Nearest">Enter nearest</option>
+            </select>
+
+            <label for="province">Province</label>
+            <input type="text" name="province" id="province" placeholder="Province" onblur="validateField('province');">
+            <!-- <h6 id="errorMsg11"></h6> -->
+
+
+            <label for="checkbox">Check to Subcribe</label>
+            <input type="checkbox" name="checkbox" id="checkbox" value="checked" checked="checked" onblur="validateCheckbox();">
+            <h6 id="errorMsg12"></h6><h6></h6>
+
+
+          </fieldset>
+
+          <div class="buttonSub">
+          <input type="submit" value="Send" class="buttonSend" onclick="return validateSub();">
+          <input type="reset" value="Cancel" class="buttonSend" onclick="return resetForm();">
+          <h6 id="errorMsg25"></h6>
+          <h6></h6>
+          </div>
+
+
+        </form>
+          <script src="../js/subscribe.js"></script>
+      </section>
+
+      <!-- section -->
+      <h2>More Subscriptions to check out:</h2>
+      <section class="sec2Sub">
+        <a href="https://patreon.com/Freezeflameinc?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"><img src="../images/socials/PATREON.png" alt="Patreon" class="linkPic"></a>
+        <!-- <h3>Patreon</h3> -->
+
+        <a href="https://ko-fi.com/freezeflameinc"><img src="../images/socials/Ko-Fi Logo.png" alt="Kofi" class="linkPic"></a>
+        <!-- <h3>Ko-fi</h3> -->
+
+        <a href="https://medium.com/@iamidlenomoreredbrown"><img src="../images/socials/Medium-logo.png" alt="Medium" class="linkPic"></a>
+        <!-- <h3>Medium</h3> -->
+
+        <a href="https://linktr.ee/freezeflameinc"><img src="../images/socials/Linktree.png" alt="LinkTree" class="linkPic"></a>
+        <!-- <h3>LinkTree</h3> -->
+
+
+      </section>
+
+      <!-- section -->
+      
+      <section class="sec3Sub">
+
+        <h2 class="title2"><a href="./contact.html">CONTACT US HERE</a></h2>
+        
+      </section>
+
+
+    </main>
+    <!-- Footer information -->
+    <footer id="foot1">
+        <div>
+            <p id="foot1">
+              <a href="https://www.linkedin.com/in/rfreese/"> <img src="../images/socials/4102586_applications_linkedin_social_social media_icon.png" alt="Linkedin"></a>
+              <a href="https://www.youtube.com/playlist?list=PLC636677FE4B95810"><img src="../images/socials/4362951_youtube_logo_social media_icon.png" alt="Youtube"></a>
+              <a href="https://github.com/FreezeFlameinc2024"><img src="../images/socials/2993771_github_social media_icon.png" alt="Github"> </a>             
+            </p>
+          </div>        
+          <p>         
+            <a href="https://freezeflametechsolutions.site/">Build by Freeze Flame Tech Solutions &#169 2025</a>
+            <address>
+                <ul>
+                    <li>PO BOX 99900, KA 556</li>
+                    <li>500 RPO WILLOW W MALL,</li>
+                    <li>GUELPH, Ontario,</li>
+                    <li>N1H 0A6, Canada</li>
+                </ul>                   
+            </address>
+          </p>      
+    </footer>
+  </body>
+</html>
