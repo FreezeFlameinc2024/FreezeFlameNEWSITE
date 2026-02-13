@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Randy Freese - CSS Document -Common Header/Footer/Nav#-PROJECT*part3- DueDate:Apr.28.2025/
+/*Remember to use layout and style seperately*/
+/* html or * works for the whole doc*/
+/*Border-box to reset html defaults*/
+
+/*Main, section, articles, aside, div.*/
+main {
+  background-color: moccasin;
+}
+.sec1,
+.sec2Sub,
+.sec3,
+.sec3Sub {
+  border: 0.3em outset darkblue;
+  border-radius: 15px 15px 15px 15px;
+
+  padding: 5% 5%;
+  margin: 1.5em 0.5em;
+}
+.sec1,
+.sec3,
+.sec3Sub {
+  background-color: lightskyblue;
+  background-image: url("../images/AI-Background\ image\ for\ website.png");
+  background-position: center;
+}
+h1,
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+
+  padding: 0.5em 0.1em;
+}
+
+/* Form styling */
+/* Subscripsion form */
+.subscribe {
+  width: 125%;
+  height: 125%;
+
+  /* border: 0.1em solid lightslategray; */
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 5% 1%;
+  padding: 3em 1.5em;
+  padding-top: 3em;
+  padding-bottom: 0.5em;
+  margin-top: -1em;
+  margin-bottom: 2.5em;
+  margin-right: 2.5em;
+  margin-left: 0.25em;
+}
+.subscribe label {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+input:hover {
+  background-color: highlight;
+}
+/* Subsribers: Section 2 */
+.sec2Sub {
+  background-color: lightseagreen;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.linkPic {
+  border: 0.3em outset lightslategrey;
+  border-radius: 100px 100px 100px 100px;
+
+  padding: 0.1em 0.1em;
+}
+
+.linkPic:hover {
+  opacity: 0.5;
+  background-color: crimson;
+  color: black;
+}
+/* Subscriber: Section 3 - Link */
+.sec3Sub {
+  display: grid;
+  grid-template-columns: 3fr;
+}
+.title2 {
+  color: darkblue;
+  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
+
+  font-size: 180%;
+  letter-spacing: 1.25em;
+  margin-left: 3em;
+}
+
+/* Main Contact form */
+.contact {
+  width: 150%;
+  height: 125%;
+  /* border: 0.1em solid lightslategray; */
+  /* background-color: lightsteelblue; */
+
+  display: grid;
+  grid-template-columns: 4fr;
+  justify-self: center;
+  align-self: center;
+  gap: 5% 5%;
+  padding: 0.1em 1.5em;
+  margin-left: 25em;
+}
+.contact label {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: larger;
+}
+/* Contact - Feildset */
+fieldset {
+  border: 0.3em outset darkblue;
+  background-color: lightsteelblue;
+  background-image: url("../images/AI-Background\ image\ for\ website.png");
+  background-blend-mode: overlay;
+  background-position: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7% 2%;
+  padding: 5% 5%;
+}
+legend {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.125em;
+  font-size: larger;
+
+  border: 0.25em solid mediumblue;
+  background-color: lightskyblue;
+  border-radius: 20px 20px;
+
+  padding: 0.2em 0.2em;
+}
+/* contact page form: */
+/* Company information */
+.contactInfo {
+  border: 0.3em outset darkblue;
+  background-color: lightseagreen;
+
+  padding: 0.5em 0.5em;
+  margin: 0.1em 0.1em;
+}
+.contactInfo p {
+  background-color: lightseagreen;
+  border: 0.1em outset darkblue;
+
+  padding: 0.5em 0.5em;
+  margin: 0.1em 0.1em;
+}
+.contactInfo h3 {
+  text-align: center;
+  margin: 0.3em 0.1em;
+}
+.hours:hover {
+  background-color: lightblue;
+  color: black;
+}
+.hours2 {
+  text-align: center;
+  font-weight: bold;
+}
+.mailingAddress1 {
+  border: 0.3em outset darkblue;
+  background-color: lightseagreen;
+
+  padding: 0.5em 0.5em;
+  margin: 0.1em 0.1em;
+}
+.mailingAddress1 p {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-style: oblique;
+
+  background-color: lightseagreen;
+
+  padding: 0.5em 0.5em;
+  margin: 0.1em 0.1em;
+}
+.mailingAddress1 h3 {
+  text-align: center;
+  margin: 0.3em 0.1em;
+}
+.mailingAddress {
+  border: 0.1em outset darkblue;
+  background-color: lightseagreen;
+}
+/* Contact Us-Form: */
+.Preferred {
+  height: 50%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+    "one one"
+    "two four"
+    "three five";
+  justify-items: center;
+  gap: 5% 5%;
+  padding: 5% 5%;
+  margin-bottom: 2em;
+}
+.one {
+  grid-area: one;
+  padding: 3% 1%;
+  margin-left: 7em;
+}
+.two {
+  grid-area: two;
+  padding: 2% 1%;
+}
+
+.four {
+  grid-area: four;
+  padding: 3% 1%;
+}
+
+.three {
+  grid-area: three;
+  padding: 2% 1%;
+}
+
+.five {
+  grid-area: five;
+  padding: 3% 1%;
+}
+
+/* Buttons */
+.buttonSub {
+  /* display: grid;
+  grid-template-columns: 3fr 3fr; */
+  justify-self: center;
+  gap: 1% 5%;
+}
+.buttonCon {
+  justify-self: center;
+  gap: 1% 1%;
+}
+.buttonSend {
+  font-weight: bold;
+  font-style: oblique;
+  font-size: larger;
+  letter-spacing: 0.2em;
+
+  width: 150px;
+  padding: 3% 3%;
+
+  border: 0.25em solid darkred;
+}
+
+/* MAP Section */
+.MAP {
+  align-self: center;
+  justify-self: center;
+
+  padding: 1% 1%;
+  margin-right: 2.25em;
+  margin-left: 2.25em;
+  margin-bottom: -5em;
+}

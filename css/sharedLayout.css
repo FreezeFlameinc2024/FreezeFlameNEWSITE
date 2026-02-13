@@ -1,0 +1,673 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Randy Freese - CSS Document -Common Header/Footer/Nav#-PROJECT*- Date:Mar.28.2025/
+/*Remember to use layout and style seperately*/
+/* html or * works for the whole doc*/
+/*Border-box to reset html defaults*/
+html {
+  box-sizing: border-box;
+}
+/*to center content & Border box settings*/
+body {
+  width: 80%;
+  max-width: 1200px;
+  min-width: 800px;
+  margin: auto;
+
+  border: 1px solid lightslategrey;
+  background-color: navajowhite;
+}
+body p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 105%;
+}
+header,
+nav,
+footer {
+  background: rgb(189, 117, 21);
+  background: linear-gradient(
+    342deg,
+    rgba(189, 117, 21, 1) 29%,
+    rgba(238, 183, 159, 1) 51%,
+    rgba(224, 131, 88, 1) 71%
+  );
+}
+h1,
+h2 {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 0.3em 0.2em;
+}
+/*New code starts below*/
+
+/*Header*/
+header img:hover {
+  opacity: 0.5;
+}
+header img {
+  display: flexbox;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "one two three four"; */
+
+  background-color: burlywood;
+  max-width: 5rem;
+  height: auto;
+  justify-self: baseline;
+  justify-content: space-evenly;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-right: 6em;
+  margin-left: 6em;
+}
+.img1 {
+  grid-area: one;
+  opacity: 0.7;
+}
+.img2 {
+  grid-area: two;
+}
+.img3 {
+  grid-area: three;
+  opacity: 0.7;
+}
+.img4 {
+  grid-area: four;
+  opacity: 0.7;
+}
+
+header {
+  background-color: burlywood;
+}
+/*Navigation*/
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: burlywood;
+
+  justify-content: space-evenly;
+  gap: 5%;
+}
+a {
+  color: navy;
+  text-decoration: none;
+  padding: 0.1em 0.2em;
+}
+a:hover {
+  color: darkred;
+}
+
+ul > li {
+  display: grid;
+  grid-template-columns: 3fr;
+  justify-content: center;
+  padding: 0.1em 0.2em;
+}
+
+/*Main, section, articles, aside, div.*/
+
+main {
+  background-color: moccasin;
+}
+
+/* SECTION 1 - Iframe, INTRO, Brief History/Company Structure*/
+section {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas:
+    "one two two"
+    "three three three";
+  gap: 1em 2em;
+  padding: 3% 3%;
+  margin: 0.1em 0.1em;
+}
+/*Iframe video*/
+.video {
+  grid-area: one;
+  padding: 0.25em 0.25em;
+  margin-left: 0.5em;
+  border: 0.3em outset lightsteelblue;
+  background-color: lightseagreen;
+}
+/*Paragraph section*/
+.history {
+  grid-area: two;
+  /* background-image: url(""); */
+  border: 0.3em outset lightsteelblue;
+  background-color: lightseagreen;
+}
+.history p {
+  text-align: center;
+  text-indent: 2%;
+  padding: 2% 0.5em;
+}
+.history h3 {
+  text-align: center;
+  font-size: 2em;
+  padding: 0.3em 0.1em;
+}
+
+/*Aside and lists*/
+.info {
+  grid-area: three;
+  text-align: center;
+  /* justify-content: center; */
+  border: 0.3em outset lightsteelblue;
+  background-color: lightseagreen;
+  background-image: url("../images/AI-Background\ image\ for\ website.png");
+  background-blend-mode: overlay;
+  background-position: center;
+}
+.info h3 {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.3em 0.1em;
+}
+.info h4 {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.5em 0.1em;
+}
+/*END OF SECTION 1*/
+
+/*SECTION 2 - FEATURED PRODUCTS*/
+.sec2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-areas: "one two three";
+  justify-items: center;
+  gap: 1em 2em;
+  padding: 3% 3%;
+  margin: 0.1em 0.1em;
+}
+/*PRODUCT 1: THE LAST CALL*/
+.LC2024 {
+  grid-area: one;
+  border: 0.3em outset lightsteelblue;
+  padding: 1em 1em;
+}
+.LC2024 img {
+  margin-left: 2em;
+}
+.LC2024 img:hover {
+  opacity: 0.2;
+}
+.LC2024 audio {
+  margin: 1em 1em;
+  margin-top: 1.5em;
+}
+.LC2024 h3 {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.1em 0.1em;
+}
+.LC2024 p {
+  background-color: lightsteelblue;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0.1em;
+}
+
+/*PRODUCT 2: THE SINATRA*/
+.SIN2022 {
+  grid-area: two;
+  border: 0.3em outset lightsteelblue;
+  padding: 1em 1em;
+}
+.SIN2022 img {
+  margin-left: 2em;
+}
+.SIN2022 img:hover {
+  opacity: 0.2;
+}
+.SIN2022 audio {
+  margin: 1em 1em;
+  margin-top: 1.5em;
+}
+.SIN2022 h3 {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.1em 0.1em;
+}
+.SIN2022 p {
+  background-color: lightsteelblue;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0.1em;
+}
+
+/*PRODUCT 3: Piece De Resistance*/
+.PDR2019 {
+  grid-area: three;
+  border: 0.3em outset lightsteelblue;
+  padding: 1em 1em;
+}
+.PDR2019 img {
+  margin-left: 2em;
+}
+.PDR2019 img:hover {
+  opacity: 0.2;
+}
+.PDR2019 audio {
+  margin: 1em 1em;
+  margin-top: 1.5em;
+}
+.PDR2019 h3 {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.1em 0.1em;
+}
+.PDR2019 p {
+  background-color: lightsteelblue;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0.1em;
+}
+
+.track {
+  background-color: lightsteelblue;
+  font-size: large;
+  font-style: oblique;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3%;
+}
+/*END SECTION 2 - FEATURED PRODUCTS*/
+/*SECTION 3 - PRODUCT GRID*/
+/*Banner*/
+.exclusive {
+  width: 100%;
+  height: 95%;
+  gap: 1em 2em;
+  padding: 3% 3%;
+  margin: 0.1em 0.1em;
+}
+/*Grid*/
+.sec3 {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr 2fr);
+  grid-template-areas:
+    "one two"
+    "nine ten"
+    "three four"
+    "eleven twelve"
+    "five six"
+    "seven eight";
+
+  gap: 1.5em 1.5em;
+  padding: 1% 1%;
+  margin: 0.1em 0.5em;
+  margin-left: 1.5em;
+}
+
+/*EXCLUSIVE 1: Quarantine SZN*/
+.quarantine {
+  grid-area: one;
+  border: 0.3em outset lightsteelblue;
+  padding: 1em 1em;
+}
+.quarantine img {
+  margin-top: 2%;
+  margin-left: 5em;
+}
+.quarantine img:hover {
+  opacity: 0.2;
+}
+.quarantine audio {
+  margin: 1em 1em;
+  margin-top: 1.5em;
+}
+.quarantine h3 {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.1em 0.1em;
+}
+.quarantine p {
+  background-color: lightsteelblue;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0.1em;
+}
+
+/*EXCLUSIVE 2: The Second Wave*/
+.wave {
+  grid-area: two;
+  border: 0.3em outset lightsteelblue;
+  padding: 1em 1em;
+  /* margin-left: 2em; */
+}
+.wave img {
+  margin-top: 2%;
+  margin-left: 5em;
+}
+.wave img:hover {
+  opacity: 0.2;
+}
+.wave audio {
+  margin: 1em 1em;
+  margin-top: 1.5em;
+}
+.wave h3 {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.1em 0.1em;
+}
+.wave p {
+  background-color: lightsteelblue;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0.1em;
+}
+
+/*EXCLUSIVE 3: Greatest Hits, Vol.1*/
+.hits {
+  grid-area: three;
+  border: 0.3em outset lightsteelblue;
+  padding: 1em 1em;
+}
+.hits img {
+  margin-top: 2%;
+  margin-left: 5em;
+}
+.hits img:hover {
+  opacity: 0.2;
+}
+.hits audio {
+  margin: 1em 1em;
+  margin-top: 1.5em;
+}
+.hits h3 {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.1em 0.1em;
+}
+.hits p {
+  background-color: lightsteelblue;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0.1em;
+}
+
+/*Videos Start*/
+/*Pray m/v*/
+.pray {
+  grid-area: seven;
+  border: 0.3em outset lightsteelblue;
+  gap: 1em 1em;
+  padding: 0.1em 1em;
+}
+/*Lost Souls m/v*/
+.souls {
+  grid-area: eight;
+  border: 0.3em outset lightsteelblue;
+  padding: 0.1em 1em;
+}
+/*Fuck-12 m/v*/
+.FUCK12 {
+  grid-area: nine;
+  border: 0.3em outset lightsteelblue;
+  padding: 0.1em 1em;
+}
+/*Inverhouse Drive m/v*/
+.inverhouse {
+  grid-area: ten;
+  border: 0.3em outset lightsteelblue;
+  padding: 0.1em 1em;
+}
+/*Wanda's Kitchen m/v*/
+.kitchen {
+  grid-area: eleven;
+  border: 0.3em outset lightsteelblue;
+  padding: 0.1em 1em;
+}
+/*The Second Wave m/v*/
+.Secondwave {
+  grid-area: twelve;
+  border: 0.3em outset lightsteelblue;
+  padding: 0.1em 1em;
+}
+/*Videos End*/
+/*EXCLUSIVE 4: Heavy Lies the Crown*/
+.heavy {
+  grid-area: four;
+  border: 0.3em outset lightsteelblue;
+  padding: 1em 1em;
+}
+.heavy img {
+  margin-top: 2%;
+  margin-left: 5em;
+}
+.heavy img:hover {
+  opacity: 0.2;
+}
+.heavy audio {
+  margin: 1em 1em;
+  margin-top: 1.5em;
+}
+.heavy h3 {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.1em 0.1em;
+}
+.heavy p {
+  background-color: lightsteelblue;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0.1em;
+}
+
+/*EXCLUSIVE 5: IV the Culture*/
+.culture {
+  grid-area: five;
+  border: 0.3em outset lightsteelblue;
+  padding: 1em 1em;
+}
+.culture img {
+  margin-top: 2%;
+  margin-left: 5em;
+}
+.culture img:hover {
+  opacity: 0.2;
+}
+.culture audio {
+  margin: 1em 1em;
+  margin-top: 1.5em;
+}
+.culture h3 {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.1em 0.1em;
+}
+.culture p {
+  background-color: lightsteelblue;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0.1em;
+}
+
+/*EXCLUSIVE 6: Living Legend*/
+.legend {
+  grid-area: six;
+  border: 0.3em outset lightsteelblue;
+  padding: 1em 1em;
+}
+.legend img {
+  margin-top: 2%;
+  margin-left: 5em;
+}
+.legend img:hover {
+  opacity: 0.2;
+}
+.legend audio {
+  margin: 1em 1em;
+  margin-top: 1.5em;
+}
+.legend h3 {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.1em 0.1em;
+}
+.legend p {
+  background-color: lightsteelblue;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 0.2em 0.1em;
+}
+/*END OF SECTION 3 - PRODUCT GRID*/
+/* SECTION 4 - Testimonials, QUOTES, Reviews */
+.sec4 {
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-areas: "one one one";
+  /* "two two three"
+    "four four four"; */
+
+  gap: 1em 2em;
+  /* padding: 3% 3%; */
+
+  justify-content: center;
+}
+.quote {
+  grid-area: one;
+}
+/* Article Grid */
+.article1 {
+  width: 100%;
+  border: 1px solid lightsteelblue;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-areas: "two three four";
+
+  gap: 1em 1em;
+  padding: 3% 3%;
+}
+
+.review {
+  grid-area: two;
+}
+.BioPic {
+  grid-area: three;
+}
+.bio2 {
+  grid-area: four;
+}
+
+blockquote {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  font-style: oblique;
+  border: 0.5em outset lightsteelblue;
+  background-color: lightseagreen;
+  padding: 1em 1em;
+}
+article img {
+  width: 100%;
+  max-height: fit-content;
+
+  border: 0.5em outset lightsteelblue;
+}
+article img:hover {
+  opacity: 0.8;
+}
+
+/*END OF MAIN*/
+
+/*Media Queries*/
+
+@media (min-width: 700px) and (max-width: 900px) {
+  section,
+  .sec2,
+  .sec3 {
+    display: grid;
+    grid-template-columns: 3fr;
+    background-color: lightcyan;
+
+    border: 3px solid darkblue;
+
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 768px) /*and (max-width: 1200px) */ {
+  nav,
+  #foot1 {
+    display: grid;
+    grid-template-columns: 2fr;
+    background-color: lightcyan;
+
+    justify-content: space-evenly;
+  }
+}
+@media (min-with: 1000px) and (max-width: 1480px) {
+  nav,
+  #foot1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: lightsalmon;
+    border: 3px solid darkblue;
+
+    justify-content: space-evenly;
+  }
+}
+
+/*Pesonalizedd Footer*/
+footer,
+p,
+address {
+  display: grid;
+  grid-template-columns: repeat(1, 4fr);
+  background-color: burlywood;
+  /* border: 1px solid darkblue; */
+  /* border-collapse: collapse; */
+  align-content: end;
+  justify-content: center;
+  /* text-align: center; */
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+}
+footer p a {
+  padding: 0.1em 0.2em;
+}
+#foot1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: burlywood;
+  gap: 1em;
+
+  justify-content: space-around;
+}
+#foot1 img {
+  max-width: 5rem;
+  height: auto;
+}
+#foot1 img:hover {
+  opacity: 0.5;
+}

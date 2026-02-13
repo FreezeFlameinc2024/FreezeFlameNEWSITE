@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Randy Freese - CSS Document -Common Header/Footer/Nav#-PROJECT*part2- DueDate:Apr.20.2025/
+/*Remember to use layout and style seperately*/
+/* html or * works for the whole doc*/
+/*Border-box to reset html defaults*/
+
+/* Main, Sections */
+/* Section 1:Music Products Full Length Releases (2020s) */
+
+/* Product Section 1: newer Music */
+.product1 {
+  display: grid;
+  grid-template-columns: 7fr;
+  justify-content: center;
+  gap: 1em 1em;
+
+  padding: 5em 5em;
+  margin-left: 0.01em;
+}
+.product1 img {
+  max-width: 115%;
+  max-height: 100%;
+
+  padding: 5% 5%;
+  margin-right: 4em;
+  margin-left: -0.4em;
+
+  border: 0.3em outset lightslategrey;
+}
+.apple {
+  background-color: #d60017;
+  opacity: 0.8;
+}
+
+/* Product Section 2: Extended Play & Collaborative */
+.product2 {
+  display: grid;
+  grid-template-columns: 7fr;
+  justify-content: center;
+  gap: 1em 1em;
+
+  padding: 5em 5em;
+  margin-left: 0.01em;
+}
+.product2 img {
+  max-width: 115%;
+  max-height: 100%;
+
+  padding: 5% 5%;
+  margin-right: 4em;
+  margin-left: -0.4em;
+
+  border: 0.3em outset lightslategrey;
+}
+
+/* Services-Section 3: Studio Services */
+.product3 {
+  display: grid;
+  grid-template-columns: 7fr;
+  justify-content: center;
+  gap: 1em 1em;
+
+  padding: 5em 5em;
+  margin-left: 1.8em;
+}
+/* .product3 img {
+  max-width: 105%;
+  max-height: 105%;
+} */
+
+/* Services - Section 4: Bookkeeping etc */
+.product4 {
+  display: grid;
+  grid-template-columns: 3fr;
+  justify-content: center;
+  gap: 1em 1em;
+}
+/* .product4 img {
+  max-width: 105%;
+  max-height: 105%;
+} */
+.content {
+  text-align: center;
+  font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  line-height: 1.2;
+
+  border: 0.3em dashed lightslategrey;
+  background-color: lightseagreen;
+
+  padding: 0.5em 0.5em;
+  margin: 0.1em 0.1em;
+}
+/* .payments {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 1em 1em;
+} */
+
+/* Payment Options - Section 5: Payment Options */
+.product5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "one two three"
+    "four four four";
+  justify-content: center;
+  justify-items: center;
+  gap: 0.1em 0.1em;
+
+  padding: 0.5em 0.5em;
+  margin-left: 25%;
+  margin-right: 10%;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#four {
+  grid-area: four;
+  justify-self: center;
+}
+
+.paymentOption1 {
+  max-width: 50%;
+  text-align: center;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  border: 0.3em dashed lightslategrey;
+  background-color: lightseagreen;
+
+  padding: 0.5em 1em;
+  margin-top: 0.2em;
+  margin-bottom: 2em;
+  margin-left: 23%;
+}
+.paymentOption2 {
+  border: 0.3em outset lightslategrey;
+  background-color: lightskyblue;
+  padding: 1.5em 1.5em;
+  margin-top: 0.3em;
+}
+.paymentOption2:hover {
+  background-color: lightblue;
+  opacity: 0.5;
+}
+
+.paymentOption3 {
+  justify-items: center;
+  align-items: center;
+
+  border: 0.3em outset lightslategrey;
+  background-color: lightskyblue;
+  padding: 0.2em 0.8em;
+  margin-bottom: 0.1em;
+  margin-right: 0.5em;
+  margin-left: 28%;
+}
+
+/* Tables: */
+/*Table Width*/
+section > table {
+  width: 100%;
+  font-size: 75%;
+
+  border: 1px solid black;
+
+  margin-left: 0.1em;
+  margin-right: 0.5em;
+}
+/* Borders for table*/
+table,
+th,
+td {
+  width: 100%;
+  border: 0.2em solid black;
+  border-collapse: collapse;
+
+  padding: 10px;
+  margin: 0.5em 5em;
+
+  background-color: lightgray;
+}
+caption {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0.2em 0.2em;
+}
+span {
+  font-size: 125%;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding: 0.5em 0.2em;
+  margin-left: 7em;
+  margin-right: 7em;
+}
+/*Blue border around the outside of table*/
+table {
+  border: 0.5em outset darkblue;
+  font-weight: bold;
+  font-size: medium;
+}
+/* baby table(s) */
+.insideTable {
+  width: 85%;
+  /* background-color: red; */
+
+  margin: 1em 2.5em;
+  text-align: center;
+  font-style: italic;
+}
+/* Header of baby table */
+.babyHead {
+  background-color: lightsteelblue;
+  font-weight: bold;
+}
+
+/* Product ID Column & Headers */
+.prodID {
+  width: 10%;
+  text-align: center;
+  font-size: 110%;
+  font-weight: bolder;
+  color: black;
+
+  background-color: lightsteelblue;
+
+  padding: 0.2em 0.4em;
+}
+/* Album Name & Artist Columns */
+.albumArtist {
+  width: 20%;
+  text-align: center;
+  font-size: 130%;
+  font-weight: bold;
+
+  background-color: mediumblue;
+  color: whitesmoke;
+}
+.description {
+  background-color: moccasin;
+  background-image: url("../images/AI-Background\ image\ for\ website.png");
+  background-blend-mode: multiply;
+  background-position: center;
+}
+/* Album Art Column */
+.ART {
+  /* background: #b83bb8; */
+  background: radial-gradient(
+    circle,
+    rgba(184, 59, 184, 1) 26%,
+    rgba(87, 126, 199, 1) 59%
+  );
+  background-image: url("../images/AI-Background\ image\ for\ website.png");
+  background-blend-mode: color-dodge;
+  background-position: center;
+}
+
+/* Footers of all tables */
+.tableFoot {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: oblique;
+
+  background-color: lightskyblue;
+}
+
+/* Adjusting heights of table section*/
+tbody {
+  width: 33%;
+}
+thead,
+tfoot {
+  height: 40px;
+}
+
+/* .paymentOption {
+  max-width: 95%;
+  max-height: 75%;
+
+  padding: 1em 1em;
+} */
+
+/*Media Queries*/
+
+@media (min-width: 700px) and (max-width: 900px) {
+  section,
+  .sec2,
+  .sec3 {
+    display: grid;
+    grid-template-columns: 3fr;
+    background-color: lightcyan;
+
+    border: 3px solid darkblue;
+
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 750px) {
+  section,
+  table,
+  th,
+  td {
+    width: 50%;
+    border: 0.2em solid red;
+    border-collapse: collapse;
+
+    border: 3px solid darkblue;
+    background-color: lightgray;
+
+    justify-content: space-evenly;
+  }
+}
