@@ -1,0 +1,69 @@
+body {
+    color: black;
+    background-color: navajowhite;
+    padding: 40px;
+    border: 5px solid black;
+    margin: 25px 25px;
+}
+
+header {
+    background-image: url('./cropped-toronto2011-northyork-to-downtown-yongest.jpeg');
+    background-position: center;
+    min-height: fit-content;
+    max-height: 550px;
+    background-repeat: fixed;
+    border: 5px solid black;
+    padding: 12px;
+    margin: 25px 25px
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    font-family: 'georgia', 'times new roman', times, serif;
+    text-align: left
+}
+
+h1,
+h2,
+h5 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+footer,
+h6,
+.footer {
+    font-size: 9px;
+    letter-spacing: 8px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+    padding: 15px;
+    line-height: 1.5px;
+}
+
+li a {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+footer {
+    border: 5px solid black;
+    background-image: url('./images/Third\ world\ council\ -\ logo\ \(300\ x\ 300\ px\).png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
